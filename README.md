@@ -20,6 +20,13 @@ script/cibuild
 
 Now you'll need to edit `manifests/init.pp` and `spec/classes/template_spec.rb`
 for your module.
+
+Move fixtures to point to your own:
+
+```
+mv spec/fixtures/modules/template spec/fixtures/modules/mynewmodule
+```
+
 If your module has other dependencies, be sure to update
 `spec/fixtures/Puppetfile`.
 From then on, you can use `script/cibuild` to run the tests.
